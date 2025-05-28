@@ -1,7 +1,7 @@
 //Assignment2
 //SIVASANKARI SRINATH THILAGAVATHI
 import java.util.Scanner;
-class Assignment2{
+class Problem2{
     public static void main(String[] args) {
         
         Scanner ob=new Scanner(System.in);
