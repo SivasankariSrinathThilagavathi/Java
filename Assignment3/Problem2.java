@@ -4,7 +4,7 @@ import java.util.Scanner;
 //Assignment3
 //Sivasankari Srinath Thilagavathi
 
-class Assignment3{
+class Problem2{
     public static void main(String[] args) {
         Scanner ob=new Scanner(System.in);
 
