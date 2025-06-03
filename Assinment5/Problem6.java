@@ -27,9 +27,9 @@ class Employee{
     }
 
     public void show(){
-        System.out.println("Title:\t"+empid);
-        System.out.println("Author:\t"+empname);
-        System.out.println("Price:\t"+salary);
+        System.out.println("Emp ID:\t"+empid);
+        System.out.println("Emp Name:\t"+empname);
+        System.out.println("Emp Salary:\t"+salary);
     }
 }
 
