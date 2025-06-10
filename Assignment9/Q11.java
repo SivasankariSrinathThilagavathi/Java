@@ -1,21 +1,14 @@
 import java.util.Scanner;
-
 public class Q11 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Accept the size of the array
+        Scanner scanner = new Scanner(System.in);        
         System.out.print("Enter the number of elements: ");
         int n = scanner.nextInt();
         int[] numbers = new int[n];
-
-        // Accept `n` elements from the user
         System.out.println("Enter " + n + " numbers:");
         for (int i = 0; i < n; i++) {
             numbers[i] = scanner.nextInt();
         }
-
-        // Find the second largest element
         if (n < 2) {
             System.out.println("At least two elements are required!");
         } else {
@@ -30,14 +23,12 @@ public class Q11 {
                     secondLargest = num;
                 }
             }
-
             if (secondLargest == Integer.MIN_VALUE) {
                 System.out.println("No second largest element found (all elements are the same).");
             } else {
                 System.out.println("Second largest element: " + secondLargest);
             }
         }
-
         scanner.close();
     }
 }
