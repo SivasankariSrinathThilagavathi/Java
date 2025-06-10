@@ -3,7 +3,6 @@ class BankAccount {
         System.out.println("Generating unique account number...");
     }
 }
-
 class SavingsAccount extends BankAccount {
     // Attempting to override final method (will cause a compilation error)
     /*
@@ -12,7 +11,6 @@ class SavingsAccount extends BankAccount {
     }
     */
 }
-
 public class Q5 {
     public static void main(String[] args) {
         BankAccount account = new BankAccount();
