@@ -4,7 +4,6 @@ public class Q11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Accept the number of rows and columns
         System.out.print("Enter the number of rows: ");
         int rows = scanner.nextInt();
         System.out.print("Enter the number of columns: ");
@@ -12,7 +11,6 @@ public class Q11 {
 
         int[][] matrix = new int[rows][cols];
 
-        // Accept elements for the matrix
         System.out.println("Enter the elements of the " + rows + "x" + cols + " matrix:");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -20,12 +18,10 @@ public class Q11 {
             }
         }
 
-        // Accept the element to search for
         System.out.print("Enter the element to search: ");
         int searchElement = scanner.nextInt();
         boolean found = false;
 
-        // Search for the element
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (matrix[i][j] == searchElement) {
@@ -35,7 +31,6 @@ public class Q11 {
             }
         }
 
-        // If the element was not found
         if (!found) {
             System.out.println("Element not found in the matrix.");
         }
