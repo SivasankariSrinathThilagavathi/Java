@@ -5,7 +5,6 @@ public class Q12 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Accept the number of rows and columns
         System.out.print("Enter the number of rows: ");
         int rows = scanner.nextInt();
         System.out.print("Enter the number of columns: ");
@@ -13,7 +12,6 @@ public class Q12 {
 
         int[][] matrix = new int[rows][cols];
 
-        // Accept elements for the 2D array
         System.out.println("Enter the elements of the " + rows + "x" + cols + " matrix:");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -21,12 +19,10 @@ public class Q12 {
             }
         }
 
-        // Sort each row in ascending order
         for (int i = 0; i < rows; i++) {
             Arrays.sort(matrix[i]); // Sorting each row
         }
 
-        // Display the sorted matrix
         System.out.println("Matrix after row-wise sorting:");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
