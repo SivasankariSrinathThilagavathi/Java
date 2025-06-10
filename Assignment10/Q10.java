@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Q10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,12 +13,10 @@ public class Q10 {
                 matrix[i][j] = scanner.nextInt();
             }
         }
-
         System.out.println("Main diagonal elements:");
         for (int i = 0; i < size; i++) {
             System.out.print(matrix[i][i] + " ");
         }
-
         scanner.close();
     }
 }
